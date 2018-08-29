@@ -16,13 +16,6 @@ class Homepage extends MY_Controller {
         $this->template('homepage',$this->data); 
 	}
 
-    public function about()
-    {
-        $this->data['title']   = "About";
-        $this->data['content'] = 'homepage/about';
-        $this->load->view('homepage/template/layout',$this->data); 
-    }
-
 }
 
 /* End of file Homepage.php */
