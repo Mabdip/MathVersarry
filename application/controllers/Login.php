@@ -17,7 +17,7 @@ class Login extends MY_Controller {
     public function index()
     {
         $this->data['title']   = "Login";
-        $this->data['content'] = 'admin/login';
+        $this->data['content'] = 'login/login';
         $this->template('login',$this->data);   
     }
 

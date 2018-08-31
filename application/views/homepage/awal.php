@@ -15,7 +15,7 @@
                               <button class="dropbtn">Seminar</button>
                               <div class="dropdown-content">
                                 <a href="<?php echo base_url(); ?>https://goo.gl/forms/2YJVEpawshw2q15i1">Pendaftaran</a>
-                                <a href="<?php echo base_url().'info'; ?>">Info</a>
+                                <a href="<?php echo base_url().'homepage/seminar'; ?>">Info</a>
                               </div>
                             </div> 
                     </div>
@@ -27,8 +27,8 @@
                               <button class="dropbtn">Olimpiade</button>
                               <div class="dropdown-content">
                                 <a href="<?php echo base_url(); ?>http://bit.ly/moos2018">Pendaftaran</a>
-                                <a href="<?php echo base_url().'infoOlim'; ?>">Info</a>
-                                <a href="#">Sign In</a>
+                                <a href="<?php echo base_url().'homepage/olim'; ?>">Info</a>
+                                <a href="<?php echo base_url().'register'; ?>">Sign In</a>
                               </div>
                             </div> 
                     </div>
@@ -54,6 +54,7 @@
                               <div class="dropdown-content">
                                 <a href="<?php echo base_url(); ?>http://bit.ly/moos2018">Pendaftaran</a>
                                 <a href="<?php echo base_url().'infoOlim'; ?>">Info</a>   
+                                <a href="<?php echo base_url().'register/rank'; ?>">Register</a>
                               </div>
                             </div> 
                     </div>

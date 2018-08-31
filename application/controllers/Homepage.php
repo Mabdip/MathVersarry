@@ -16,6 +16,34 @@ class Homepage extends MY_Controller {
         $this->template('homepage',$this->data); 
 	}
 
+    public function contact()
+    {
+        $this->data['title'] = "Contact Us";
+        $this->data['content'] = 'homepage/contact';
+        $this->template('homepage', $this->data);
+    }
+
+    public function about()
+    {
+        $this->data['title']   = "About";
+        $this->data['content'] = 'homepage/about';
+        $this->template('homepage',$this->data); 
+    }
+
+    public function seminar()
+    {
+        $this->data['title'] = "Seminar";
+        $this->data['content'] = 'homepage/infoSeminar';
+        $this->template('homepage', $this->data);
+    }
+
+    public function olim()
+    {
+        $this->data['title'] = "Olimpiade";
+        $this->data['content'] = 'homepage/infoOlimp';
+        $this->template('homepage', $this->data);
+    }
+
 }
 
 /* End of file Homepage.php */
