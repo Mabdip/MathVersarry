@@ -23,22 +23,25 @@ class Login extends MY_Controller {
 
     public function aksi_login()
     {
-        $this->load->model('user_m');
+        $this->load->model('loginm');
         $username = $this->post('username');
         $password = $this->post('password');
-        //echo $password.'+'.$username; exit();
-        //$cek_auth = $this->m_data->cek($username,$password)->num_rows();
-        $cek_auth = $this->user_m->get_where([ 'username' => $username, 'password' => $password ]);
-        //print_r($cek_auth); exit();
+        $cek_auth = $this->loginm->row([ 'username' => $username, 'password' => md5($password) ]);
+        
         if($cek_auth)
         {
             $data_session = array(
-                'username' => $username,
-                'status' => "login"
+                'username' => $cek_auth->username,
+                'password' => $cek_auth->password,
+                'level'     => $cek_auth->level
                 );
  
             $this->session->set_userdata($data_session);
-            redirect('admin','refresh');
+            if($cek_auth->level == 'admin' && $cek_auth > 0) 
+            {
+                redirect('admin','refresh');    
+            } 
+            
             exit();
  
         } else {
@@ -46,8 +49,8 @@ class Login extends MY_Controller {
             redirect('login','refresh');
             exit();
         }
-
     }
+
 
 }
 
