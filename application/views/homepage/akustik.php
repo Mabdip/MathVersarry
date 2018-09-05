@@ -1,4 +1,4 @@
- <?= form_open( 'register/data_rank/', [ 'class' => 'form-inline'] ) ?>
+ <?= form_open( 'register/data_akustik/', [ 'class' => 'form-inline'] ) ?>
   <h2 style="margin-top: 30px;margin-left: 15px;">Register Form</h2>
   <hr>
   <?php echo $this->session->flashdata('msg'); ?>

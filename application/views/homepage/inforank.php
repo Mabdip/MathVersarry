@@ -1,6 +1,6 @@
  <div class="container" style="margin-top: 100px;padding: 4px;">
   <div class="row">
-    <h2 style="text-align: left;">Seminar</h2>
+    <h2 style="text-align: left;">Info Rank</h2>
     <hr>
     <div class="modal-body" style=".modal-body {
   overflow: scroll;
@@ -18,6 +18,8 @@
   <div id="caption"></div>
 </div>
 </div>
+
+
 <script>
 // Get the modal
 var modal = document.getElementById('myModal');

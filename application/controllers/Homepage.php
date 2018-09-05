@@ -44,6 +44,20 @@ class Homepage extends MY_Controller {
         $this->template('homepage', $this->data);
     }
 
+    public function spss()
+    {
+        $this->data['title'] = "SPSS";
+        $this->data['content'] = 'homepage/infospss';
+        $this->template('homepage', $this->data);
+    }
+
+    public function rank()
+    {
+        $this->data['title'] = "Rank";
+        $this->data['content'] = 'homepage/inforank';
+        $this->template('homepage', $this->data);
+    }
+
 }
 
 /* End of file Homepage.php */

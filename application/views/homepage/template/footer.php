@@ -34,6 +34,23 @@
                             <img src="<?php echo base_url(); ?>assets/main/img/sponsor/flp.jpeg" class="img-thumbnail"
                             style="width: 200px;height: 100px;margin-top: 15px; margin-left:-25px;" alt="">
                         </div>
+
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <img src="<?php echo base_url(); ?>assets/main/img/sponsor/ikaunsri.jpeg" class="img-thumbnail"
+                            style="width: 200px;height: 100px;margin-top: 15px; margin-left:auto;" alt="">
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <img src="<?php echo base_url(); ?>assets/main/img/sponsor/ikamipa.jpeg" class="img-thumbnail"
+                            style="width: 200px;height: 100px;margin-top: 15px; margin-left:-15px;" alt="">
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <img src="<?php echo base_url(); ?>assets/main/img/sponsor/25hop.jpeg" class="img-thumbnail"
+                            style="width: 200px;height: 100px;margin-top: 15px; margin-left:-25px;" alt="">
+                        </div>
+                        <div class="col-md-3 col-sm-4 col-xs-6">
+                            <img src="<?php echo base_url(); ?>assets/main/img/sponsor/sem.jpeg" class="img-thumbnail"
+                            style="width: 200px;height: 100px;margin-top: 15px; margin-left:-25px;" alt="">
+                        </div>
                 </div>
             </section>
             <!--==================== End sc clients logo area ====================-->
