@@ -19,7 +19,7 @@
                             <img class="user-avatar rounded-circle" src="<?php echo base_url() ?>assets/admin/images/admin.png" alt="User Avatar">
                         </a>
                         <div class="user-menu dropdown-menu">
-                                <a class="nav-link" href="<?php echo base_url().'Admin/logout'; ?>"><i class="fa fa-power -off"></i>Logout</a>
+                                <a class="nav-link" href="<?php echo base_url().'Logout'; ?>"><i class="fa fa-power -off"></i>Logout</a>
                         </div>
                     </div>
                 </div>

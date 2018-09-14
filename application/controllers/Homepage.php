@@ -58,6 +58,37 @@ class Homepage extends MY_Controller {
         $this->template('homepage', $this->data);
     }
 
+    public function login_olim()
+    {
+        $this->data['title'] = "Login";
+        $this->data['content'] = 'homepage/login';
+        $this->template('homepage', $this->data);
+    }
+
+    public function auth()
+    {
+        $this->load->model('userolim_m');
+        $nisn = $this->post('nisn');
+        $password = $this->post('password');
+        $cek_auth = $this->userolim_m->row([ 'nisn' => $nisn, 'password' => md5($password) ]);
+        
+        if($cek_auth)
+        {
+            $data_session = array(
+                'nisn' => $cek_auth->nisn,
+                'password' => $cek_auth->password
+                );
+ 
+            $this->session->set_userdata($data_session);
+            redirect('homepage','refresh');
+ 
+        } else {
+            $this->msg('Maaf Username atau Password Anda Salah !', 'danger');
+            redirect('homepage/login_olim','refresh');
+            exit();
+        }
+    }
+
 }
 
 /* End of file Homepage.php */

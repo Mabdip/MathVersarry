@@ -29,7 +29,10 @@
         
         <link href="<?php echo base_url(); ?>assets/main/css/style.css" rel="stylesheet">
         <link href="<?php echo base_url(); ?>assets/main/css/responsive.css" rel="stylesheet">
-
+        
+        <script type="text/javascript" src="<?php echo base_url(); ?>assets/main/js/jquery-2.2.4.js"></script>
+        <script type="text/javascript" src="<?php echo base_url(); ?>assets/main/js/jquery.countdown.js"></script>
+        <script type="text/javascript" src="<?php echo base_url(); ?>assets/main/js/jquery.countdown.min.js"></script>
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>

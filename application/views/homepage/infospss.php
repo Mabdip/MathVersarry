@@ -9,7 +9,7 @@
   max-width: auto;
 }
 ">
-<img id="myImg" src="<?php echo base_url();?>assets/main/img/pamflet.jpeg" alt="" style="width:100%;max-width:300px">
+<img id="myImg" src="<?php echo base_url();?>assets/main/img/comingsoon.jpeg" alt="" style="width:100%;max-width:300px">
 
 <!-- The Modal -->
 <div id="myModal" class="modal">

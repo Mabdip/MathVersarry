@@ -4,8 +4,10 @@
             <div class="container">
                 <div class="main_title">
                     <h2>ACARA</h2>
+                    <p id="demo"></p>
                     <p>Math Versarry adalah acara yang diadakan oleh Fakultas MIPA Universitas Sriwijaya. Dengan menghadirkan beberapa cabang perlombaan dan seminar.</p>
                 </div>
+                
                 <div class="row service_s_inner">
                     <div class="col-md-4 col-sm-4 col-xs-6">
                         <div class="ss_item" style="margin-top: 10px;margin-left: 10px;">
@@ -26,9 +28,8 @@
                         <div class="dropdown">
                               <button class="dropbtn"style="border-radius: 10px;margin-left: -10px;">Olimpiade</button>
                               <div class="dropdown-content">
-                                <a href="<?php echo base_url(); ?>http://bit.ly/moos2018">Pendaftaran</a>
                                 <a href="<?php echo base_url().'homepage/olim'; ?>">Info</a>
-                                <a href="<?php echo base_url().'register'; ?>">Sign In</a>
+                                <a href="<?php echo base_url().'homepage/login_olim'; ?>">Sign In</a>
                               </div>
                             </div> 
                     </div>
@@ -105,3 +106,5 @@
        <div class="ss_item">
                            
                     </div>
+
+        

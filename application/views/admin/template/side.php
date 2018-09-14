@@ -20,16 +20,16 @@
                         <a href="<?php echo base_url().'Admin'; ?>"> <i class="menu-icon fa fa-dashboard"></i>Dashboard </a>
                     </li>
                     <li class="active">
-                        <a href="<?php echo base_url().'Admin/isi_absen'; ?>"> <i class="menu-icon fa fa-address-book-o"></i>Isi Absen</a>
+                        <a href="<?php echo base_url().'Admin/isi_soal'; ?>"> <i class="menu-icon fa fa-address-book-o"></i>Isi Soal</a>
                     </li>
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-laptop"></i>Data</a>
                         <ul class="sub-menu children dropdown-menu">
                             <li><i class="fa fa-group"></i><a href="<?php echo base_url().'Admin/data_mahasiswa
-                            '; ?>">Data Mahasiswa</a></li>
-                            <li><i class="fa fa-id-badge"></i><a href="<?php echo base_url().'Admin/data_kelas'; ?>">Data Kelas</a></li>
-                            <li><i class="fa fa-bars"></i><a href="<?php echo base_url().'Admin/data_jurusan'; ?>">Data Jurusan</a></li>
-                            <li><i class="fa fa-share-square-o"></i><a href="<?php echo base_url().'Admin/data_prodi'; ?>">Data Prodi</a></li>
+                            '; ?>">Data Rank 1</a></li>
+                            <li><i class="fa fa-id-badge"></i><a href="<?php echo base_url().'Admin/data_soal'; ?>">Data Soal </a></li>
+                            <li><i class="fa fa-bars"></i><a href="<?php echo base_url().'Admin/data_jurusan'; ?>">Data Akustik</a></li>
+                            <li><i class="fa fa-share-square-o"></i><a href="<?php echo base_url().'Admin/data_prodi'; ?>">Data SPSS</a></li>
                             <li><i class="fa fa-share-square-o"></i><a href="<?php echo base_url().'Admin/data_semester'; ?>">Data Semester</a></li>
                         </ul>
                     </li>

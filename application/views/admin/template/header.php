@@ -10,8 +10,9 @@
     <meta name="description" content="Sufee Admin - HTML5 Admin Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="apple-icon.png">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="<?php echo base_url(); ?>assets/admin/apple-icon.png">
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>assets/admin/favicon.ico">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/admin/assets/css/style.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/admin/assets/css/lib/chosen/chosen.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/admin/assets/css/normalize.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/admin/assets/css/bootstrap.min.css">
@@ -27,6 +28,8 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
     <link rel="icon" href="<?php echo base_url(); ?>assets/admin/images/adm.ico">
-
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/admin/assets/js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/admin/assets/js/tinymce/js/tinymce/jquery.tinymce.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/admin/assets/js/tinymce/js/tinymce/tinymce.min.js"></script>
 </head>
 

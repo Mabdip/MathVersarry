@@ -31,7 +31,6 @@
     <i class="fa fa-genderless icon"></i>
     <label class="radio-inline" style="margin-left: 10px;"><input type="radio" name="jadwal" value="29 September 2018" required>Gelombang 1 (29 September 2018)</label>
     <label class="radio-inline" style="margin-left: 10px;"><input type="radio" name="jadwal" value="13 Oktober 2018" required>Gelombang 2 (13 Oktober 2018)</label>
-
   </div>
 
   <div class="input-container">

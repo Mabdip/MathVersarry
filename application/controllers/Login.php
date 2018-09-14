@@ -37,7 +37,7 @@ class Login extends MY_Controller {
                 );
  
             $this->session->set_userdata($data_session);
-            if($cek_auth->level == 'admin' && $cek_auth > 0) 
+            if($cek_auth->level == 'admin') 
             {
                 redirect('admin','refresh');    
             } 
