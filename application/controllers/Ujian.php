@@ -30,23 +30,7 @@ class Ujian extends MY_Controller {
 	public function validasi_jawaban()
 	{
 		$this->load->model('nilai_m');
-		$this->load->model('userolim_m');
-		$this->data['userolim']	= $this->userolim_m->get();
-		if(isset($_POST)) {
-
-			$data = [
-                'id_nilai'      => $this->post('id_nilai'),
-                'nisn'    		=> $this->post('nisn'),
-                'benar'     	=> $this->post('benar'),
-                'salah'    	 	=> $this->post('salah'),
-                'kosong'     	=> $this->post('kosong'),
-                'point'     	=> $this->post('point'),
-                'tanggal'       => $this->post('tanggal')
-            ];
-            echo '<pre>';
-            var_dump($data['nisn']);
-            echo '</pre>';
-            $this->nilai_m->insert($data,$id);
+		if(isset($_POST)) {			
 			$benar=0;
 			$kosong=0;
 			$salah=0;			
@@ -62,6 +46,17 @@ class Ujian extends MY_Controller {
 					$salah++;
 				}
 			}
+
+			$point = $benar*2+$salah*-1;
+			$hasil = [
+                'nisn'    		=> $this->session->userdata('nisn'),
+                'benar'     	=> $benar,
+                'salah'    	 	=> $salah,
+                'kosong'     	=> $kosong,
+                'point'     	=> $point,
+                'tanggal'       => date(d-m-Y)
+            ];            
+            $this->nilai_m->insert($hasil);
 			
 		}
 		
