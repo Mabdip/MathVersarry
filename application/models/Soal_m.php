@@ -12,9 +12,15 @@ class Soal_m extends MY_Model {
   
 	public function getSoal()
 	{
-		$sql = 'SELECT * FROM soal';
-		$a 	= $this->db->query($sql);
-		return $a->row();
+		$sql = $this->db->get($this->data['table_name']);
+		return $sql->result();
+	}
+
+	public function selectSoal($id)
+	{
+		$this->db->where($this->data['primary_key'], $id);
+		$q = $this->db->get($this->data['table_name']);
+		return $q->row();
 	}
 
 }

@@ -18,7 +18,7 @@
         }
     </style>
 
-
+ 
 
     <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/main/css/ui-lightness/jquery-ui-1.8.2.custom.css" />  
 <style type="text/css">
@@ -124,36 +124,36 @@ text-decoration: none;
  
 </div>
     <p>sadasd</p>
-    <?php 
-           $urut = 0; foreach($data as $i):?>
-                    
-                     <form name="form1" method="post" action="?page=jawaban">
+    <?php  
+           $urut = 1; foreach($data as $i): ?>
+            
+            <form name="form1" method="post" action="<?= base_url('ujian/validasi_jawaban') ?>">
             <input type="hidden" name="id[]" value=<?php echo $i->id_soal; ?>>
             <table width="457" border="0">
             <tr>
-                <td width="17"><font color="#FFFFFF"><?php echo $urut=$urut+1; ?></font></td>
-                <td width="430"><font color="#FFFFFF"><?php echo "$i->pertanyaan"; ?></font></td>
+                <td width="17"><font color="red"><?php echo $urut; ?>.</font></td>
+                <td width="430"><font color="red"><?php echo $i->pertanyaan; ?></font></td>
             </tr>
             <tr>
                 <td height="21">&nbsp;</td>
-                <td><input name="pilihan[<?php echo $id; ?>]" type="radio" value="A"> <font color="#FFFFFF"><?php echo "$pilihan_a";?></font> </td>
+                <td><input name="pilihan[<?php echo $i->id_soal; ?>]" type="radio" value="A"> <font color="red"><?php echo "$i->pilihan_a";?></font> </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td><input name="pilihan[<?php echo $id; ?>]" type="radio" value="B"> <font color="#FFFFFF"><?php echo "$pilihan_b";?></font> </td>
+                <td><input name="pilihan[<?php echo $i->id_soal; ?>]" type="radio" value="B"> <font color="red"><?php echo "$i->pilihan_b";?></font> </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td><input name="pilihan[<?php echo $id; ?>]" type="radio" value="C"> <font color="#FFFFFF"><?php echo "$pilihan_c";?></font> </td>
+                <td><input name="pilihan[<?php echo $i->id_soal; ?>]" type="radio" value="C"> <font color="red"><?php echo "$i->pilihan_c";?></font> </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td><input name="pilihan[<?php echo $id; ?>]" type="radio" value="D"> <font color="#FFFFFF"><?php echo "$pilihan_d";?></font> </td>
+                <td><input name="pilihan[<?php echo $i->id_soal; ?>]" type="radio" value="D"> <font color="red"><?php echo "$i->pilihan_d";?></font> </td>
             </tr>
             </table>     
             
             
-            ?>
+            
    
         <?php $urut++; endforeach; ?>
             <tr>
