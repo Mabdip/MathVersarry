@@ -80,7 +80,7 @@ class Homepage extends MY_Controller {
                 );
  
             $this->session->set_userdata($data_session);
-            redirect('homepage','refresh');
+            redirect('ujian','refresh');
  
         } else {
             $this->msg('Maaf Username atau Password Anda Salah !', 'danger');

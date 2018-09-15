@@ -10,6 +10,13 @@ class Userolim_m extends MY_Model {
 		$this->data['primary_key'] = 'nisn';
 	}
 
+	public function selectUser($id)
+	{
+		$this->db->where($this->data['primary_key'], $id);
+		$q = $this->db->get($this->data['table_name']);
+		return $q->row();
+	}
+
 }
 
 /* End of file Userolim_m.php */
